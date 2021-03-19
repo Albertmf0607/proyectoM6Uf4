@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="">
+        <label for="idioma" id="idiomaL"></label>
+        <select name="idioma" id="idioma">
+            <option value="ca">Ca</option>
+            <option value="es">Es</option>
+            <option value="en">En</option>
+        </select>
+        <br>
+        <label for="nickname" id="nicknameL"></label>
+        <input type="text" name="nickname" id="nickname">
+        <label for="nickname" id="nicknameError" style="display:none">Aquest nickname ja existeix</label>
+        <label for="nickiname" id="nicknameSimi"></label>
+        <br>
+        <label for="nom" id="nomL"></label>
+        <input type="text" id="nom">
+        <label for="nom" id="nomError" style="display:none">El nom no pot ser null</label>
+        <br>
+        <label for="dni" id="dniL"></label>
+        <input type="text" name="dni" id="dni">
+        <label for="dni" style="display:none" id="dniError"></label>
+        <br>
+        <label for="provincia" id="provinciaL"></label>
+        <select id="provincia" name="provincia">
+            <option></option>
+          </select>
+        <br>
+        <label for="municipi" id="municipiL"></label>
+        <select id="municipi" name="municipi">
+            <option>Escoje una provincia</option>
+          </select>
+        <br>
+        <label for="domicili" id="domiciliL"></label>
+        <input type="text" name="domicili" id="domicili">
+        <label for="domicili" id="domiciliError" style="display:none">El domicili no pot ser null</label>
+        <br>
+        <label for="ubicacio" id="ubicacioL"></label>
+        <div id="mapid" style="width: 600px; height: 400px;"></div>
+        <label for="ruta" id="rutaL"></label>
+        <div class="loader" id="loader">Loading...</div>
+    </form>
+</body>
+</html>
